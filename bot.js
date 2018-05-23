@@ -1,4 +1,4 @@
-const prefix = "ps!";
+const prefix = "p!";
 const discord = require ('discord.js');
 
 var client = new discord.Client(); 
