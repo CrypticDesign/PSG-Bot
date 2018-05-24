@@ -12,10 +12,6 @@ client.on('ready', () => {
 
 client.on('message', message => {
     
-    if (sender.id === '449013570806480896') {
-        return;
-    }
-    
     if (message.author.bot) return;
     
     msg = message.content.toLowerCase();
@@ -45,7 +41,7 @@ client.on('message', message => {
     
     if (msg.includes('fuck')) {
         message.delete();
-        message.channel.send('Hey! Don\'t be a potty-mouth' + member.toString());
+        message.channel.send('Hey! Don\'t be a potty-mouth ' + member.user.username);
     }
     
 });
