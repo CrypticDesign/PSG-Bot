@@ -12,6 +12,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
     
+    if (sender.id === '449013570806480896') {
+        return;
+    }
+    
     if (message.author.bot) return;
     
     msg = message.content.toLowerCase();
@@ -37,6 +41,11 @@ client.on('message', message => {
     
     if (msg.startsWith (prefix + 'links')) {
         message.channel.send('**Links** \n \n***YouTube*** - https://www.youtube.com/channel/UC-KM4Su6AEkUNea4TnYbBBg \n***Twitter*** - https://twitter.com/psgrenade \n***Facebook*** - https://www.facebook.com/PlayStationGrenade/');
+    }
+    
+    if (msg.includes('fuck')) {
+        message.delete();
+        message.channel.send('Hey! Don\'t be a potty-mouth' + member.toString());
     }
     
 });
