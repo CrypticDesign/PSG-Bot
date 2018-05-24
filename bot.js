@@ -41,7 +41,7 @@ client.on('message', message => {
     
     if (msg.includes('fuck')) {
         message.delete();
-        message.channel.send('Hey! Don\'t be a potty-mouth ' + member.user.username);
+        message.channel.send('Hey! Don\'t be a potty-mouth');
     }
     
 });
