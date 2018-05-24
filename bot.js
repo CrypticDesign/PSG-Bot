@@ -39,7 +39,7 @@ client.on('message', message => {
         message.channel.send('**Links** \n \n***YouTube*** - https://www.youtube.com/channel/UC-KM4Su6AEkUNea4TnYbBBg \n***Twitter*** - https://twitter.com/psgrenade \n***Facebook*** - https://www.facebook.com/PlayStationGrenade/');
     }
     
-    if (msg.includes('fuck', 'shit')) {
+    if (msg.includes('fuck')) {
         message.delete();
         message.author.send('Hey! Don\'t be a potty-mouth');
     }
