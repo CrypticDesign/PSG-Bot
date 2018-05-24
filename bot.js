@@ -31,8 +31,12 @@ client.on('message', message => {
     }
     
     if (msg.startsWith (prefix + 'help')) {
-        message.author.send('**List of Commands** \n \n**w!help** - Gives you a List of Commands \n**w!ping** - Pong! \n**fortune [question]** - Find out the answer to your questions! (BETA)');
+        message.author.send('**List of Commands** \n \n**ps!help** - Gives you a List of Commands \n**ps!ping** - Pong! \n**ps!fortune [question]** - Find out the answer to your questions! (BETA) \n**ps!links** - Gives All of the PSG Social Media Links!');
         
+    }
+    
+    if (msg.startsWith (prefix + 'links')) {
+        message.channel.send('**Links** \n \n***YouTube*** - https://www.youtube.com/channel/UC-KM4Su6AEkUNea4TnYbBBg \n***Twitter*** - https://twitter.com/psgrenade \n***Facebook*** - https://www.facebook.com/PlayStationGrenade/');
     }
     
 });
