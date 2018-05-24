@@ -5,8 +5,6 @@ var client = new discord.Client();
 
 const token = "NDQ4OTk1Mjk4OTUwNTEyNjQx.DeeSHA.iLmGnxfnKx1fTfm-SEt6QZuJJ_Q";
 
-});
-
 client.on('ready', () => {
     console.log('I am ready mate!');
     
