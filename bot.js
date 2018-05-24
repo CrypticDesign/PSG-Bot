@@ -3,7 +3,7 @@ const discord = require ('discord.js');
 
 var client = new discord.Client(); 
 
-const token = "NDQ4OTk1Mjk4OTUwNTEyNjQx.DeePCA.FDI5hGTAxtvQMbuhwW_hXdYwHng";
+const token = "NDQ4OTk1Mjk4OTUwNTEyNjQx.DeeSHA.iLmGnxfnKx1fTfm-SEt6QZuJJ_Q";
 
 });
 
