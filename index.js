@@ -4,6 +4,7 @@ const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 
+
 fs.readdir("./commands/", (err, files) => {
   if (err) console.log(err);
 
@@ -24,7 +25,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is now online`);
-  bot.user.setActivity("Playstation Grenade! | ps!help", {type: "WATCHING"});
+  bot.user.setActivity("Vagene", {type: "WATCHING"});
 });
 
 bot.on("message", async message => {
